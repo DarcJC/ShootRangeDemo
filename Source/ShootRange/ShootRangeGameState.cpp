@@ -5,5 +5,14 @@
 
 AShootRangeGameState::AShootRangeGameState()
 {
-	PlayerScore = TArray<int>();
+	Score = 0;
+}
+
+auto AShootRangeGameState::GetScore() const -> int
+{
+	return Score;
+}
+
+void AShootRangeGameState::BeginPlay()
+{
 }

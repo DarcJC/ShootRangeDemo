@@ -17,7 +17,12 @@ class SHOOTRANGE_API AShootRangeGameState : public AGameState
 public:
 	AShootRangeGameState();
 
-	UPROPERTY(BlueprintReadWrite)
-	TArray<int> PlayerScore;
-	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int Score;
+
+	UFUNCTION(BlueprintPure=false, BlueprintCallable)
+	int GetScore() const;
+
+	virtual void BeginPlay() override;
+
 };
