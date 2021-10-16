@@ -3,6 +3,7 @@
 #include "ShootRangeGameMode.h"
 #include "ShootRangeHUD.h"
 #include "ShootRangeCharacter.h"
+#include "ShootRangeGameState.h"
 #include "UObject/ConstructorHelpers.h"
 
 AShootRangeGameMode::AShootRangeGameMode()
